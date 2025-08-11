@@ -1,13 +1,10 @@
-import CompA from './propsDrilling/CompA'
+import Message from "./Message/msg";
+let App =()=>{
 
-let App = () => {
-    return (
-        <div>
+    return <div>
             <h3>App Component</h3>
             <hr />
-            <CompA />
-        </div>
-    );
-};
-
+            <Message/>
+            </div>
+}
 export default App;
