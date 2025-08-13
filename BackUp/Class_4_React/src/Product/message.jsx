@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 
 let Message = () => {
-    const [msg, setMsg] = useState("Hello");
+    const [msg, setMsg] = useState("Hello!...");
 
     const gmHandler = () => {
         setMsg("Good Morning!");
