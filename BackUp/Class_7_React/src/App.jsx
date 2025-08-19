@@ -1,15 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from './Navbar/navbar';
-import Employees from './Employees/employees';
-import Users from './Users/users';
-
+import Navbar from './navbar/Navbar';
+import Employees from './employees/Employees';
 const App=()=>{
   return <div>
+    <h3>component app </h3>
     <hr/>
     <Navbar/>
     <Employees/>
-    <Users/>
   </div>
 }
 
