@@ -1,0 +1,2 @@
+API Usage: Get Products
+API URL: https://dummyjson.com/products

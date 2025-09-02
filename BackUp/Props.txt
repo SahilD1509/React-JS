@@ -1,0 +1,3 @@
+Props:(Properties)
+- Props are used for send data to one component to another component.
+- Props are immutable.

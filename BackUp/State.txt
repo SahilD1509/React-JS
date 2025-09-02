@@ -1,0 +1,4 @@
+State:
+- Component own data.
+- State is mutable.
+to change state in class component we can use useState()
