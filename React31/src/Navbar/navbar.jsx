@@ -1,17 +1,26 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-const Navbar = () => {
-  return <nav className='navbar navbar-dark bg-dark navbar-expand-lg'>
-            <a href="/index" className='navbar-brand'>Logo</a>
-            <div className='ms-auto'>
-                <ul className='navbar-nav'>
-                    <li><Link to="/index" className='nav-link'>Home</Link></li>
-                    <li><Link to="/about" className='nav-link'>About</Link></li>
-                    <li><Link to="/services" className='nav-link'>Services</Link></li>
-                    <li><Link to="/contact" className='nav-link'>Contact</Link></li>
-                </ul>
-            </div>
-         </nav>
+import {Link,BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Home from '../public/components/Home';
+import About from '../public/components/About';
+let App=()=>{
+    return <div>
+            <Router>
+                <nav>
+                    <Link to="/index">Logo</Link>
+                    <div>
+                        <ul>
+                            <li><Link to="/index">Home</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/services">Services</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
+                        </ul>
+                    </div>
+                </nav>
+                <Routes>
+                    <Route path="/"  element={<Home/>}/>
+                    <Route path="/index"  element={<Home/>}/>
+                    <Route path="/about"  element={<About/>}/>
+                </Routes>
+            </Router>
+        </div>
 }
-
-export default Navbar
+export default App;
